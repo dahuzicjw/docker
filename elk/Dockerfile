@@ -1,5 +1,5 @@
 # docker-elk
-FROM ubuntu-java8:latest
+FROM ubuntu-jre8:latest
 MAINTAINER Kevin72c "kevin72c@qq.com"
 
 RUN apt-get update && apt-get install wget -y
