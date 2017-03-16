@@ -7,5 +7,5 @@
 docker build -t docker-elk:latest .
 docker stop docker-elk
 docker rm docker-elk
-docker run --name docker-elk -d -t -p 5601:5601 -p 9200:9200 -p 9600:9600 -p 9300:9300 -p 4560:4560 $* docker-elk:latest
+docker run --name docker-elk -d -t -p5601:5601 -p4560:4560 docker-elk:latest
 docker exec -it docker-elk bash
