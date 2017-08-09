@@ -3,7 +3,6 @@ FROM ubuntu:14.04
 MAINTAINER Kevin"kevin72c@qq.com"
 
 RUN apt-get update
-RUN apt-get install -y vim
 RUN apt-get install -y redis-server
 
 EXPOSE 6379
