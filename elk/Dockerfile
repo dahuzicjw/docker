@@ -1,5 +1,5 @@
 # docker-elk
-FROM localhost/repository/docker/ubuntu-jre8:latest
+FROM registry.cn-hangzhou.aliyuncs.com/kevin72cubuntu-jre8:latest
 MAINTAINER Kevin"kevin72c@qq.com"
 
 RUN apt-get update && apt-get install wget -y
