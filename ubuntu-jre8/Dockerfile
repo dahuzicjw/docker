@@ -1,6 +1,6 @@
 # ubuntu-jre8
 FROM ubuntu:14.04
-MAINTAINER Kevin "kevin72c@qq.com"
+MAINTAINER Kevin"kevin72c@qq.com"
 
 RUN apt-get update
 RUN \
