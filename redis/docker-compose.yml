@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  redis:
+    image: redis:5.0.9
+    restart: always
+    command: redis-server --requirepass 1qaz2wsx
+    environment:
+      REDIS_REPLICATION_MODE: master
+    ports:
+      - '6379:6379'
+    expose:
+      - '6379'
+    volumes:
+      - /Users/chenjiawei/storage/data/redis:/data
