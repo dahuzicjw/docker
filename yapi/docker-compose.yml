@@ -9,7 +9,7 @@ services:
       - LOG_PATH=/tmp/yapi.log
       - HOME=/home
       - PORT=3000
-      - ADMIN_EMAIL=me@jinfeijie.cn
+      - ADMIN_EMAIL=root@zimo.com
       - DB_SERVER=mongo
       - DB_NAME=yapi
       - DB_PORT=27017
@@ -17,7 +17,7 @@ services:
     ports:
       - 127.0.0.1:3000:3000
     volumes:
-      - ~/data/yapi/log/yapi.log:/home/vendors/log # log dir
+      - ~/storage/logs/yapi/yapi.log:/home/vendors/log # log dir
     depends_on:
       - mongo
     entrypoint: "bash /wait-for-it.sh mongo:27017 -- entrypoint.sh"
@@ -30,7 +30,7 @@ services:
     ports:
       - 127.0.0.1:27017:27017
     volumes:
-      - ~/data/yapi/mongodb:/data/db #db dir
+      - ~/storage/data/mongodb:/data/db #db dir
     networks:
       - back-net
 networks:
