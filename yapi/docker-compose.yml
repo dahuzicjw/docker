@@ -20,8 +20,7 @@ services:
     depends_on:
       - mongo
     entrypoint: "bash /wait-for-it.sh mongo:27017 -- entrypoint.sh"
-    networks:
-      - host
+    
   mongo:
     image: mongo
     container_name: mongo
@@ -30,5 +29,7 @@ services:
       - 127.0.0.1:27017:27017
     volumes:
       - /storage/data/mongodb:/data/db #db dir
-    networks:
-      - host
+    
+networks:
+  back-net:
+    external: false
