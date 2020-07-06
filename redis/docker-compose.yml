@@ -11,4 +11,4 @@ services:
     expose:
       - '6379'
     volumes:
-      - /Users/chenjiawei/storage/data/redis:/data
+      - /storage/data/redis:/data
