@@ -14,7 +14,7 @@ services:
       - DB_PORT=27017
     # restart: always
     ports:
-      - 127.0.0.1:3000:3000
+      - 3000:3000
     volumes:
       - /storage/logs/yapi/yapi.log:/home/vendors/log # log dir
     depends_on:
@@ -26,7 +26,7 @@ services:
     container_name: mongo
     # restart: always
     ports:
-      - 127.0.0.1:27017:27017
+      - 27017:27017
     volumes:
       - /storage/data/mongodb:/data/db #db dir
     
