@@ -8,7 +8,7 @@ services:
       - LOG_PATH=/tmp/yapi.log
       - HOME=/home
       - PORT=3000
-      - ADMIN_EMAIL=root@zimo.com
+      - ADMIN_EMAIL=root@xxx.com
       - DB_SERVER=mongo
       - DB_NAME=yapi
       - DB_PORT=27017
