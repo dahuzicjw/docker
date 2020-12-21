@@ -38,7 +38,13 @@ java -jar /opt/atlassian/jira/atlassian-agent.jar -m xx@xx.com -n xx.com -p jira
 java -jar /opt/atlassian/jira/atlassian-agent.jar -m xx@xx.com -n xx.com -p com.radiantminds.roadmaps-jira -o https://jira.xxx.com -s BWXU-NDD0-EEU0-RVV9
 4. SSO单点登录插件 OAuth/OpenID Connect (OIDC) for Confluence SSO
 java -jar /opt/atlassian/jira/atlassian-agent.jar -m xx@xx.com -n xx.com -p com.miniorange.oauth.jira-oauth -o https://jira.xxx.com -s BWXU-NDD0-EEU0-RVV9
-
+- Xray测试用例插件Xray Test Management for Jira
+java -jar /opt/atlassian/jira/atlassian-agent.jar -m xx@xx.com -n xx.com -p com.xpandit.plugins.xray -o https://jira.xxx.com -s BWXU-NDD0-EEU0-RVV9
+- Zephyr Scale测试插件 Zephyr Scale Test Management For Jira
+java -jar /opt/atlassian/jira/atlassian-agent.jar -m xx@xx.com -n xx.com -p com.kanoah.test-manager -o https://jira.xxx.com -s BWXU-NDD0-EEU0-RVV9
+java -jar /opt/atlassian/jira/atlassian-agent.jar -m xx@xx.com -n xx.com -p com.go2group.jira.plugin.synapse -o https://jira.xxx.com -s BWXU-NDD0-EEU0-RVV9
+- 汉化插件
+java -jar /opt/atlassian/jira/atlassian-agent.jar -m xx@xx.com -n xx.com -p csdn.jira.languagepatch.zh_CN -o https://jira.xxx.com -s BWXU-NDD0-EEU0-RVV9
 
 
 docker stop jira

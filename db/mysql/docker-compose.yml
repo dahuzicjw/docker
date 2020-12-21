@@ -18,11 +18,8 @@ services:
       # Where our data will be persisted
     volumes:
       - /storage/data/mysql:/var/lib/mysql
-
-# volumes:
-#    dbdata:
-#       driver: local
-#       driver_opts:
-#          o: bind
-#          type: none
-#          device: /Users/chenjiawei/storage/data/mysql
+    command: [
+              '--character-set-server=utf8mb4',
+              '--collation-server=utf8mb4_unicode_ci',
+              '--default-time-zone=+8:00'
+             ]

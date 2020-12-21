@@ -1,3 +1,9 @@
-# Zookeeper
-### 启动命令
-docker run -d -p 2181:2181 --name zookeeper registry.cn-hangzhou.aliyuncs.com/kevin72c/zookeeper:latest
+# zookeeper
+ref: https://hub.docker.com/_/zookeeper
+
+```
+docker stop zookeeper
+docker rm zookeeper
+docker run --name zookeeper -d -p2181:2181 zookeeper
+
+```
