@@ -20,7 +20,7 @@ docker stop nacos
 docker rm nacos
 docker run --name nacos -p 8848:8848 -d -e MODE=standalone -e SPRING_DATASOURCE_PLATFORM=mysql \
     -e MYSQL_SERVICE_HOST=rm-bp1m0mpzhi1zafy4x.mysql.rds.aliyuncs.com -e MYSQL_SERVICE_DB_NAME=nacos \
-    -e MYSQL_SERVICE_USER=nacos -e MYSQL_SERVICE_PASSWORD=zimocloud123release \
+    -e MYSQL_SERVICE_USER=nacos -e MYSQL_SERVICE_PASSWORD=xx123release \
     nacos/nacos-server:latest
 
 ```

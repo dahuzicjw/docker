@@ -1,6 +1,6 @@
 # ubuntu-jre8
 FROM ubuntu:18.04
-MAINTAINER Zimo "zimo@zimo.com"
+MAINTAINER xx "xx@xx.com"
 
 RUN apt-get update && apt-get install -y wget tzdata && rm -rf /var/lib/apt/lists/*
 
